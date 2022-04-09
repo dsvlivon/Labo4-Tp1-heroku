@@ -31,22 +31,45 @@
     background-size: 100% 100%;
     color: #ffffff;
   }
-
+  .button-back{
+    margin-top:5%; display: flex; align-items: center; margin-left: 47%; background-color: #1976d2;
+    border-radius: 4px; border-width: 0ch; color: white; font-size: 11px; font-weight: 40px;padding: 10px;
+  }
   .button-pic{
     height: 90%; width: 90%; border-radius: 20px; margin-right: 5%; margin-left: 5%;
   }
+  .router-juegos{
+    color:white; font-weight: 40; font-size: 14px; align-items: center; text-align: center;
+    margin-right:25px; margin-top: 15px;
+    background-color: #1976d2; border-radius: 4px; padding: 8px;
+  }
+  a:hover{
+    background-color: #607ba3;  color: white;
+  }
+
   .toolbar {
     position: absolute; top: 0; left: 0; right: 0; height: 60px; display: flex;
     align-items: center; background-color: #33567a; color: white; font-weight: 600;
-  }
-  .router-juegos{
-    color: #33567a; font-weight: 40; margin-right:5px; font-size: 14px; align-items: center;
   }
 
   .toolbar img {
     margin: 0 16px;
   }
-
+  button:hover {
+    border: 2px solid currentColor;
+    border-radius: 3rem;
+    color: yellow;
+    font-size: 4rem;
+    font-weight: 100;
+    overflow: hidden;
+    padding: 1rem 2rem;
+    position: relative;
+    text-decoration: none;
+    transition: .2s transform ease-in-out;
+    will-change: transform;
+    z-index: 0;
+  }
+  
   .content {
     display: flex;
     margin: 82px auto 32px;

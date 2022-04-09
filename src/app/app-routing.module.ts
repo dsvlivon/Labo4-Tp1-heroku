@@ -5,7 +5,7 @@ import { JuegosComponent } from './page/juegos/juegos.component';
 import { PreguntadosComponent } from './page/preguntados/preguntados.component';
 import { NotFoundComponent } from './page/not-found/not-found.component';
 import { TatetiComponent } from './page/tateti/tateti.component';
-import { MenuComponent } from './page/menu/menu.component';
+import { AhorcadoComponent } from './ahorcado/ahorcado.component';
 import { QuienSoyComponent } from './quien-soy/quien-soy.component';
 import { NavBarComponent } from './page/nav-bar/nav-bar.component';
 import { HomeComponent } from './home/home.component';
@@ -17,10 +17,11 @@ const routes: Routes = [
   {path:'login', component:LoginComponent},
   {path:'quiensoy', component:QuienSoyComponent},  
   {path:'juegos', component:JuegosComponent, children:[
-    {path:'tateti', component:TatetiComponent},  
-    {path:'preguntados', component:PreguntadosComponent},  
+    {path:'ahorcado', component:AhorcadoComponent}
   ]},
-  // {path:'juego/tateti', component:TatetiComponent},
+  {path:'preguntados', component:PreguntadosComponent},  
+  {path:'tateti', component:TatetiComponent},  
+  // {path:'preguntados', component:PreguntadosComponent},
   
   {path:'**', component:NotFoundComponent}
 

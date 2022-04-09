@@ -13,6 +13,7 @@ import { PreguntadosComponent } from './page/preguntados/preguntados.component';
 import { NotFoundComponent } from './page/not-found/not-found.component';
 import { MenuComponent } from './page/menu/menu.component';
 import { NavBarComponent } from './page/nav-bar/nav-bar.component';
+import { AhorcadoComponent } from './ahorcado/ahorcado.component';
 
 //todas las clases q genere TIENEN Q ESTAR ACA, ACA ESTA LA MAGIA
 
@@ -27,7 +28,8 @@ import { NavBarComponent } from './page/nav-bar/nav-bar.component';
     PreguntadosComponent,
     NotFoundComponent,
     MenuComponent,
-    NavBarComponent
+    NavBarComponent,
+    AhorcadoComponent
   ],
   imports: [
     BrowserModule,
