@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { Usuario } from '../Entidades/usuario';
 
 @Component({
   selector: 'app-login',
@@ -7,17 +8,28 @@ import { Router } from '@angular/router';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-
+  miUsuario:Usuario;
+  
+  
   constructor(public ruteo:Router) { 
-  //cuando tengo data del usuario, aca puedo redirigir a un lugar especifico
-  // ruteo.nav
+    this.miUsuario=new Usuario();
+    //cuando tengo data del usuario, aca puedo redirigir a un lugar especifico
+    //ruteo.nav
   }
-
+  
   ngOnInit(): void {
   }
 
-  redirigir(){
-    this.ruteo.navigateByUrl('juegos/tateti')
+  Log(){
+    this.miUsuario.Login();
+    if(this.miUsuario.validate==true){
+      this.ruteo.navigateByUrl('home');
+    } else {
+      this.ruteo.navigateByUrl('login');
+    }
+  }
+  Cancel(){
+    this.ruteo.navigateByUrl('login');
   }
 
 }

@@ -1,4 +1,18 @@
-<app-nav-bar>Login</app-nav-bar>
+<app-nav-bar></app-nav-bar>
 
-
-<input type="button" (click)="redirigir()" value="aceptar" style="margin-top: 25%;">
+<div class="login-meme">
+    <div style="margin-left: 20%;">
+        <input type="string" [(ngModel)]="miUsuario.mail" value="password" placeholder="Mail">
+        <input type="string" [(ngModel)]="miUsuario.pass" value="password" placeholder="Password">
+    </div>
+    <div style="margin-left: 20%;">
+        <input type="button" (click)="Log()" value="Submit" style="margin-top: 2%;">
+        <input type="button" (click)="Cancel()" value="Cancel" style="margin-left: 24%;">
+    </div>
+</div>
+<div>
+    <p style="text-align: center; color: darkslategray;">
+        defPass="1234";
+        defMail="daniel@utn.com";
+    </p>
+</div>
