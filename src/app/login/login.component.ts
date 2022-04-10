@@ -8,7 +8,7 @@ import { Usuario } from '../Entidades/usuario';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-  miUsuario:Usuario;
+  public miUsuario:Usuario;
   
   
   constructor(public ruteo:Router) { 

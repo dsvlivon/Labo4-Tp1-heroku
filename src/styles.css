@@ -71,12 +71,14 @@
   }
   
   .content {
-    display: flex;
-    margin: 82px auto 32px;
-    padding: 0 16px;
-    max-width: 960px;
-    flex-direction: column;
+    align-self: center;
     align-items: center;
+    align-content: center;
+    margin-top: 10%;
+    color: #333;
+    padding: 0 16px;
+    max-width: 90%;
+    margin-left: 20%;
   }
 
   .login-meme {
