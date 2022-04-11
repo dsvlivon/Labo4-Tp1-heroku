@@ -1,9 +1,39 @@
-<p>menu works!</p>
-<div>
-    <a routerLink="login">login</a>
+<footer class="page-footer"> 
+   <div class="container">  
+     <div class="row">  
+       <div class="col l6 m4 l6">  
+         <h6 class="white-text"><a routerLink="/quiensoy">Quien Soy?</a></h6>
+         <p>Un "no tan" joven estudiante de programacion</p>
+         <p>en busca de un sueño. Aprobar Laboratorio 4.</p>
+        </div>
+  
+        <div class="col l4 offset-l2 m4 l3">
+           <h6 class="white-text"><a routerLink="/quiensoy"> Juegos </a></h6>
+           <ul>
+             <li><a routerLink="/tateti">Tateti</a></li>
+             <li><a routerLink="/preguntados">Preguntados</a></li>
+             <li><a routerLink="/ahorcado">Ahorcado</a></li>
+           </ul>
+        </div>
+  
+       </div>
+     </div>
 
-</div>
-<div>
-    <a routerLink="juegos">juegis</a>
-
-</div>
+     <div>
+       <div class="container">
+       <p>© 2022 UTN-Avellaneda</p>
+       <a class="grey-text text-lighten-4 right" href="#!">Terminos y Condiciones</a>
+       <div clas="row">
+         <p>
+            <a href="{{linkedin}}"><img src="{{linkPic}}" 
+            alt="linkedin" width="15" height="15">Mi Linkedin</a>
+         </p>
+        <p>
+           <a href="{{github}}"><img src="{{gitPic}}"
+           alt="github" width="15" height="15">Mi Github</a>
+        </p>
+       </div>
+     </div>
+   </div>
+  
+ </footer>

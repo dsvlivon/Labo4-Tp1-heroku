@@ -30,6 +30,8 @@
     background-attachment: fixed;
     background-size: 100% 100%;
     color: #ffffff;
+    display: flex;
+    flex-direction: column;
   }
   .button-back{
     margin-top:5%; display: flex; align-items: center; margin-left: 47%; background-color: #1976d2;
@@ -95,7 +97,6 @@
     transition: all 0.2s ease-in-out;
   }
 
-
   .card.card-small {
     height: 16px;
     width: 168px;
@@ -109,10 +110,10 @@
     min-width: 30%;
     position: relative;
   }
+
   footer {
-    background-color: #1976d2;
-    margin-top: 8px;
-    display: flex;
-    align-items: center;
-    line-height: 20px;
+  background-color: #333; display: flex;
+  font-size: 10px;
+  color: #496288;
+  max-height: 5%;
   }
